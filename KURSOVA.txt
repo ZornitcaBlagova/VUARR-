@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp12
+{
+    class Obicolca
+    {
+        public static double sv0 = 0;
+        public Obicolca(float r) {
+            double P;
+            P = 2 * Math.PI * r;
+            Console.WriteLine("'obicolca na krug : " + P);
+            Obicolca.sv0 += P;
+
+
+        }
+
+        public Obicolca(float a, float b)
+        {
+            double P;
+            P = (2 * a) + (2 * b);
+            Console.WriteLine("'obicolca na pravoygylnik : "+ P);
+            Obicolca.sv0 += P;
+
+        }
+        public Obicolca(float a, float b, float c)
+
+        {
+            double P;
+            P = (a+ b);
+            Console.WriteLine("'obicolca na triygylnik : " + P);
+            Obicolca.sv0 += P;
+        }
+OBIKOLKA 
